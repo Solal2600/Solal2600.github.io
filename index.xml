@@ -6,13 +6,63 @@
         <description>Recent content on Solal</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-hans</language>
-        <lastBuildDate>Wed, 14 Sep 2022 22:50:55 +0800</lastBuildDate><atom:link href="https://solal2600.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 13 Jun 2023 15:03:44 +0800</lastBuildDate><atom:link href="https://solal2600.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>READING 《WALDEN》</title>
+        <link>https://solal2600.github.io/readwalden/</link>
+        <pubDate>Tue, 13 Jun 2023 15:03:44 +0800</pubDate>
+        
+        <guid>https://solal2600.github.io/readwalden/</guid>
+        <description>&lt;img src="https://solal2600.github.io/cover_walden.jpeg" alt="Featured image of post READING 《WALDEN》" /&gt;&lt;hr&gt;
+&lt;h2 id=&#34;2023年6月12日&#34;&gt;2023年6月12日&lt;/h2&gt;
+
+
+
+
+
+
+    
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Qc411u7mS&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;2023年6月13日&#34;&gt;2023年6月13日&lt;/h2&gt;
+
+
+
+
+
+
+    
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1wW4y1Q7bZ&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        <item>
         <title>无人机调试</title>
-        <link>https://solal2600.github.io/p/drone/</link>
+        <link>https://solal2600.github.io/drone/</link>
         <pubDate>Wed, 14 Sep 2022 22:50:55 +0800</pubDate>
         
-        <guid>https://solal2600.github.io/p/drone/</guid>
-        <description>&lt;img src="https://solal2600.github.io/p/drone/cover.jpg" alt="Featured image of post 无人机调试" /&gt;&lt;hr&gt;
+        <guid>https://solal2600.github.io/drone/</guid>
+        <description>&lt;img src="https://solal2600.github.io/cover_drone.jpg" alt="Featured image of post 无人机调试" /&gt;&lt;hr&gt;
 &lt;h1 id=&#34;一前期准备&#34;&gt;一、前期准备&lt;/h1&gt;
 &lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
 &lt;ul&gt;
@@ -24,7 +74,7 @@
 &lt;p&gt;开启路由器，将Nano和地面站都连入该路由器生成的局域网。&lt;/p&gt;
 &lt;h2 id=&#34;虚拟机网络设置&#34;&gt;虚拟机网络设置&lt;/h2&gt;
 &lt;p&gt;打开VMware，在虚拟机Ubuntu关机状态下，打开虚拟机设置-网络适配器-网络连接，选择 &lt;strong&gt;桥接模式&lt;/strong&gt; ，并勾选“复制网络连接状态”。
-&lt;img src=&#34;https://img-blog.csdnimg.cn/346448756aba48e5af9ab5f8ad557081.jpeg#pic_center&#34;
+&lt;img src=&#34;https://solal2600.github.io/ubuntu%e4%bf%ae%e6%94%b9%e7%bd%91%e7%bb%9c%e8%ae%be%e7%bd%ae.jpeg&#34;
 	
 	
 	
@@ -151,20 +201,12 @@
 </description>
         </item>
         <item>
-        <title>Archives</title>
-        <link>https://solal2600.github.io/archives/</link>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://solal2600.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Hello World</title>
-        <link>https://solal2600.github.io/p/hello-world/</link>
+        <link>https://solal2600.github.io/example/</link>
         <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://solal2600.github.io/p/hello-world/</guid>
-        <description>&lt;img src="https://solal2600.github.io/p/hello-world/cover.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p&gt;
+        <guid>https://solal2600.github.io/example/</guid>
+        <description>&lt;img src="https://solal2600.github.io/cover_helloworld.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p&gt;
 &lt;p&gt;For more information about this theme, check the documentation: &lt;a class=&#34;link&#34; href=&#34;https://docs.stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://docs.stack.jimmycai.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Want a site like this? Check out &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -177,15 +219,23 @@
 </description>
         </item>
         <item>
-        <title>Links</title>
-        <link>https://solal2600.github.io/links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <title>文档</title>
+        <link>https://solal2600.github.io/archives/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://solal2600.github.io/links/</guid>
+        <guid>https://solal2600.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
-        <title>Search</title>
+        <title>链接</title>
+        <link>https://solal2600.github.io/%E9%93%BE%E6%8E%A5/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://solal2600.github.io/%E9%93%BE%E6%8E%A5/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>搜索</title>
         <link>https://solal2600.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
