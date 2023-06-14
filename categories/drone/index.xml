@@ -13,16 +13,16 @@
         
         <guid>https://solal2600.github.io/drone/</guid>
         <description>&lt;img src="https://solal2600.github.io/cover_drone.jpg" alt="Featured image of post 无人机调试" /&gt;&lt;hr&gt;
-&lt;h1 id=&#34;一前期准备&#34;&gt;一、前期准备&lt;/h1&gt;
-&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
+&lt;h2 id=&#34;一前期准备&#34;&gt;一、前期准备&lt;/h2&gt;
+&lt;h3 id=&#34;注意事项&#34;&gt;注意事项&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;以下所指的 &lt;strong&gt;地面站&lt;/strong&gt; ，可以理解为开发者个人电脑通过虚拟机所使用的Ubuntu系统。&lt;/li&gt;
 &lt;li&gt;以下所指的 &lt;strong&gt;Nano&lt;/strong&gt; , 可以理解为Jetson Nano所使用的Ubuntu系统。&lt;/li&gt;
 &lt;li&gt;打开 &lt;strong&gt;终端&lt;/strong&gt; 快捷键：&lt;!-- raw HTML omitted --&gt;Ctrl&lt;!-- raw HTML omitted --&gt; + &lt;!-- raw HTML omitted --&gt;Alt&lt;!-- raw HTML omitted --&gt; + &lt;!-- raw HTML omitted --&gt;T&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;连接局域网&#34;&gt;连接局域网&lt;/h2&gt;
+&lt;h3 id=&#34;连接局域网&#34;&gt;连接局域网&lt;/h3&gt;
 &lt;p&gt;开启路由器，将Nano和地面站都连入该路由器生成的局域网。&lt;/p&gt;
-&lt;h2 id=&#34;虚拟机网络设置&#34;&gt;虚拟机网络设置&lt;/h2&gt;
+&lt;h3 id=&#34;虚拟机网络设置&#34;&gt;虚拟机网络设置&lt;/h3&gt;
 &lt;p&gt;打开VMware，在虚拟机Ubuntu关机状态下，打开虚拟机设置-网络适配器-网络连接，选择 &lt;strong&gt;桥接模式&lt;/strong&gt; ，并勾选“复制网络连接状态”。
 &lt;img src=&#34;https://solal2600.github.io/ubuntu%e4%bf%ae%e6%94%b9%e7%bd%91%e7%bb%9c%e8%ae%be%e7%bd%ae.jpeg&#34;
 	
@@ -35,8 +35,8 @@
 	
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;二获取ip地址和设备名称&#34;&gt;二、获取IP地址和设备名称&lt;/h1&gt;
-&lt;h2 id=&#34;ip地址&#34;&gt;IP地址&lt;/h2&gt;
+&lt;h2 id=&#34;二获取ip地址和设备名称&#34;&gt;二、获取IP地址和设备名称&lt;/h2&gt;
+&lt;h3 id=&#34;ip地址&#34;&gt;IP地址&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在Nano上打开终端，输入&lt;code&gt;ifconfig&lt;/code&gt;，获得IP地址
@@ -49,14 +49,14 @@
 假设得到IP地址为：198.168.1.4 ，以下简称 &lt;strong&gt;地面站IP&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;设备名称&#34;&gt;设备名称&lt;/h2&gt;
+&lt;h3 id=&#34;设备名称&#34;&gt;设备名称&lt;/h3&gt;
 &lt;p&gt;在终端中，介于“@”和“:”之间的绿色字体，即设备名称。
 假设获得以下设备名称：
 “&lt;strong&gt;iaxlab-desktop&lt;/strong&gt;” ,以下简称 &lt;strong&gt;Nano设备名&lt;/strong&gt;
 “&lt;strong&gt;solal-virtual-machine&lt;/strong&gt;” ,以下简称 &lt;strong&gt;地面站设备名&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;三配置nano&#34;&gt;三、配置Nano&lt;/h1&gt;
-&lt;h2 id=&#34;修改bashrc文件&#34;&gt;修改bashrc文件&lt;/h2&gt;
+&lt;h2 id=&#34;三配置nano&#34;&gt;三、配置Nano&lt;/h2&gt;
+&lt;h3 id=&#34;修改bashrc文件&#34;&gt;修改bashrc文件&lt;/h3&gt;
 &lt;p&gt;在Nano终端输入&lt;code&gt;gedit ~/.bashrc&lt;/code&gt;，在bashrc文件最后一行添加：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -80,7 +80,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;保存bashrc文件，然后在终端输入&lt;code&gt;source ~/.bashrc&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;修改hosts文件&#34;&gt;修改hosts文件&lt;/h2&gt;
+&lt;h3 id=&#34;修改hosts文件&#34;&gt;修改hosts文件&lt;/h3&gt;
 &lt;p&gt;在Nano终端输入&lt;code&gt;sudo gedit /etc/hosts&lt;/code&gt;，在hosts文件中添加：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -101,8 +101,8 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;保存hosts文件&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;四配置地面站&#34;&gt;四、配置地面站&lt;/h1&gt;
-&lt;h2 id=&#34;修改bashrc文件-1&#34;&gt;修改bashrc文件&lt;/h2&gt;
+&lt;h2 id=&#34;四配置地面站&#34;&gt;四、配置地面站&lt;/h2&gt;
+&lt;h3 id=&#34;修改bashrc文件-1&#34;&gt;修改bashrc文件&lt;/h3&gt;
 &lt;p&gt;在地面站终端输入&lt;code&gt;gedit ~/.bashrc&lt;/code&gt;，在bashrc文件最后一行添加：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -126,7 +126,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;保存bashrc文件，然后在终端输入&lt;code&gt;source ~/.bashrc&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;修改hosts文件-1&#34;&gt;修改hosts文件&lt;/h2&gt;
+&lt;h3 id=&#34;修改hosts文件-1&#34;&gt;修改hosts文件&lt;/h3&gt;
 &lt;p&gt;在Nano终端输入&lt;code&gt;sudo gedit /etc/hosts&lt;/code&gt;，在hosts文件中添加：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -147,7 +147,6 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;保存hosts文件&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;By Solal&lt;/p&gt;
 </description>
         </item>
         

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-hans" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='通过路由器连接JetsonNano与地面站'>
-<title>无人机调试</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='网站建设以及后续优化笔记'>
+<title>网站搭建笔记</title>
 
-<link rel='canonical' href='https://solal2600.github.io/drone/'>
+<link rel='canonical' href='https://solal2600.github.io/webbuild1/'>
 
-<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='无人机调试'>
-<meta property='og:description' content='通过路由器连接JetsonNano与地面站'>
-<meta property='og:url' content='https://solal2600.github.io/drone/'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='网站搭建笔记'>
+<meta property='og:description' content='网站建设以及后续优化笔记'>
+<meta property='og:url' content='https://solal2600.github.io/webbuild1/'>
 <meta property='og:site_name' content='Solal'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-09-14T22:50:55&#43;08:00'/><meta property='article:modified_time' content='2022-09-14T22:50:55&#43;08:00'/><meta property='og:image' content='https://solal2600.github.io/cover_drone.jpg' />
-<meta name="twitter:title" content="无人机调试">
-<meta name="twitter:description" content="通过路由器连接JetsonNano与地面站"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://solal2600.github.io/cover_drone.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2023-06-14T16:54:43&#43;08:00'/><meta property='article:modified_time' content='2023-06-14T16:54:43&#43;08:00'/><meta property='og:image' content='https://solal2600.github.io/category_web.jpg' />
+<meta name="twitter:title" content="网站搭建笔记">
+<meta name="twitter:description" content="网站建设以及后续优化笔记"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://solal2600.github.io/category_web.jpg' />
     </head>
     <body class="
     article-page
@@ -223,29 +223,25 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#一前期准备">一、前期准备</a>
+    <li><a href="#前期准备">前期准备</a>
       <ol>
-        <li><a href="#注意事项">注意事项</a></li>
-        <li><a href="#连接局域网">连接局域网</a></li>
-        <li><a href="#虚拟机网络设置">虚拟机网络设置</a></li>
+        <li><a href="#1安装go语言">1）安装go语言</a></li>
+        <li><a href="#2安装hugo">2）安装hugo</a></li>
       </ol>
     </li>
-    <li><a href="#二获取ip地址和设备名称">二、获取IP地址和设备名称</a>
+    <li><a href="#网站部署">网站部署</a>
       <ol>
-        <li><a href="#ip地址">IP地址</a></li>
-        <li><a href="#设备名称">设备名称</a></li>
+        <li><a href="#1创建一个新网站">1）创建一个新网站</a></li>
+        <li><a href="#2配置主题">2）配置主题</a></li>
+        <li><a href="#3添加内容">3）添加内容</a></li>
       </ol>
     </li>
-    <li><a href="#三配置nano">三、配置Nano</a>
+    <li><a href="#成果查看">成果查看</a></li>
+    <li><a href="#同步到github远程库">同步到Github远程库</a>
       <ol>
-        <li><a href="#修改bashrc文件">修改bashrc文件</a></li>
-        <li><a href="#修改hosts文件">修改hosts文件</a></li>
-      </ol>
-    </li>
-    <li><a href="#四配置地面站">四、配置地面站</a>
-      <ol>
-        <li><a href="#修改bashrc文件-1">修改bashrc文件</a></li>
-        <li><a href="#修改hosts文件-1">修改hosts文件</a></li>
+        <li><a href="#1在github上建立远程库">1）在Github上建立远程库</a></li>
+        <li><a href="#2从本地上传到远程库">2）从本地上传到远程库</a></li>
+        <li><a href="#3更新到github远程库">3）更新到Github远程库</a></li>
       </ol>
     </li>
   </ol>
@@ -262,9 +258,9 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/drone/">
+            <a href="/webbuild1/">
                 
-                    <img src="/cover_drone.jpg" loading="lazy" alt="Featured image of post 无人机调试" />
+                    <img src="/category_web.jpg" loading="lazy" alt="Featured image of post 网站搭建笔记" />
                 
             </a>
         </div>
@@ -274,8 +270,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/drone/" style="background-color: #2a9d8f; color: #fff;">
-                无人机
+            <a href="/categories/web/" style="background-color: #2a9d8f; color: #fff;">
+                网站搭建
             </a>
         
     </header>
@@ -283,12 +279,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/drone/">无人机调试</a>
+            <a href="/webbuild1/">网站搭建笔记</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            通过路由器连接JetsonNano与地面站
+            网站建设以及后续优化笔记
         </h3>
         
     </div>
@@ -309,7 +305,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Sep 14, 2022</time>
+                <time class="article-time--published">Jun 14, 2023</time>
             </div>
         
 
@@ -339,141 +335,90 @@
     <section class="article-content">
     
     
-    <hr>
-<h2 id="一前期准备">一、前期准备</h2>
-<h3 id="注意事项">注意事项</h3>
-<ul>
-<li>以下所指的 <strong>地面站</strong> ，可以理解为开发者个人电脑通过虚拟机所使用的Ubuntu系统。</li>
-<li>以下所指的 <strong>Nano</strong> , 可以理解为Jetson Nano所使用的Ubuntu系统。</li>
-<li>打开 <strong>终端</strong> 快捷键：<!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->T<!-- raw HTML omitted --></li>
-</ul>
-<h3 id="连接局域网">连接局域网</h3>
-<p>开启路由器，将Nano和地面站都连入该路由器生成的局域网。</p>
-<h3 id="虚拟机网络设置">虚拟机网络设置</h3>
-<p>打开VMware，在虚拟机Ubuntu关机状态下，打开虚拟机设置-网络适配器-网络连接，选择 <strong>桥接模式</strong> ，并勾选“复制网络连接状态”。
-<img src="/ubuntu%e4%bf%ae%e6%94%b9%e7%bd%91%e7%bb%9c%e8%ae%be%e7%bd%ae.jpeg"
-	
-	
-	
-	loading="lazy"
-	
-		alt="ubuntu修改网络设置"
-	
-	
-></p>
-<hr>
-<h2 id="二获取ip地址和设备名称">二、获取IP地址和设备名称</h2>
-<h3 id="ip地址">IP地址</h3>
-<ol>
-<li>
-<p>在Nano上打开终端，输入<code>ifconfig</code>，获得IP地址
-我们需要的是 <strong>wlan0-inet</strong>
-假设得到IP地址为：198.168.1.2 ，以下简称 <strong>NanoIP</strong></p>
-</li>
-<li>
-<p>同样的，在地面站打开终端，输入<code>ifconfig</code>，获得IP地址
-我们需要的是 <strong>ens33-inet</strong>
-假设得到IP地址为：198.168.1.4 ，以下简称 <strong>地面站IP</strong></p>
-</li>
-</ol>
-<h3 id="设备名称">设备名称</h3>
-<p>在终端中，介于“@”和“:”之间的绿色字体，即设备名称。
-假设获得以下设备名称：
-“<strong>iaxlab-desktop</strong>” ,以下简称 <strong>Nano设备名</strong>
-“<strong>solal-virtual-machine</strong>” ,以下简称 <strong>地面站设备名</strong></p>
-<hr>
-<h2 id="三配置nano">三、配置Nano</h2>
-<h3 id="修改bashrc文件">修改bashrc文件</h3>
-<p>在Nano终端输入<code>gedit ~/.bashrc</code>，在bashrc文件最后一行添加：</p>
+    <h1 id="使用hugo搭建网站">使用hugo搭建网站</h1>
+<h2 id="前期准备">前期准备</h2>
+<h3 id="1安装go语言">1）安装go语言</h3>
+<p>从All releases - The Go Programming Language下载.msi安装包，并安装到选定目录下。</p>
+<p>在终端输入go version以验证安装成功。</p>
+<h3 id="2安装hugo">2）安装hugo</h3>
+<p>在Releases · gohugoio/hugo下载hugo，然后讲hugo.exe所在目录添加至系统环境变量Path下。</p>
+<p>在终端输入<code>hugo version</code>验证。</p>
+<h2 id="网站部署">网站部署</h2>
+<h3 id="1创建一个新网站">1）创建一个新网站</h3>
+<p><code>hugo new site page-name</code></p>
+<h3 id="2配置主题">2）配置主题</h3>
+<p>在Complete Lists | Hugo Themes里挑选喜欢的主题，并输入以下代码配置：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_HOSTNAME</span><span class="o">=</span>NanoIP
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://NanoIP:11311<span class="sb">`</span>
+<pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="cl"><span class="nv">cd</span> <span class="nv">page</span><span class="o">-</span><span class="nv">name</span>
+</span></span><span class="line"><span class="cl"><span class="nv">git</span> <span class="nv">init</span>
+</span></span><span class="line"><span class="cl"><span class="nv">git</span> <span class="nv">submodule</span> <span class="nv">add</span> <span class="nv">web</span><span class="o">-</span><span class="nc">URL</span><span class="o">-</span><span class="k">or</span><span class="o">-</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">key</span> <span class="nv">themes</span><span class="o">/</span><span class="nv">theme</span><span class="o">-</span><span class="nv">name</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>以上面的NanoIP为例，这里就应该添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_HOSTNAME</span><span class="o">=</span>198.168.1.2
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://198.168.1.2:11311<span class="sb">`</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>保存bashrc文件，然后在终端输入<code>source ~/.bashrc</code></p>
-<h3 id="修改hosts文件">修改hosts文件</h3>
-<p>在Nano终端输入<code>sudo gedit /etc/hosts</code>，在hosts文件中添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">地面站IP     地面站设备名
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>以上面的地面站IP和地面站设备名为例，这里就应该添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">192.168.1.4     solal-virtual-machine
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>保存hosts文件</p>
+</div><p>使用 Visual Studio Code 打开网站所在目录，在网站配置文件config.toml中输入：</p>
+<p><code>theme = &quot;theme-name&quot;</code></p>
+<h3 id="3添加内容">3）添加内容</h3>
+<p>输入代码添加内容：</p>
+<p><code>hugo new posts/post-name.md</code></p>
+<p>关于Markdown语言的语法可以在Markdown 官方教程中查看:
+<a class="link" href="https://markdown.com.cn/"  target="_blank" rel="noopener"
+    >markdown官网</a></p>
 <hr>
-<h2 id="四配置地面站">四、配置地面站</h2>
-<h3 id="修改bashrc文件-1">修改bashrc文件</h3>
-<p>在地面站终端输入<code>gedit ~/.bashrc</code>，在bashrc文件最后一行添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_HOSTNAME</span><span class="o">=</span>地面站IP
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://NanoIP:11311<span class="sb">`</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>以上面的地面站IP和NanoIP为例，这里就应该添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_HOSTNAME</span><span class="o">=</span>198.168.1.4
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://198.168.1.2:11311<span class="sb">`</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>保存bashrc文件，然后在终端输入<code>source ~/.bashrc</code></p>
-<h3 id="修改hosts文件-1">修改hosts文件</h3>
-<p>在Nano终端输入<code>sudo gedit /etc/hosts</code>，在hosts文件中添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">NanoIP     Nano设备名
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>以上面的地面站IP和地面站设备名为例，这里就应该添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">192.168.1.2     iaxlab-desktop
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>保存hosts文件</p>
+<h2 id="成果查看">成果查看</h2>
+<p>输入代码启动Hugo服务器：<code>hugo server -D</code></p>
+<p>我们可以在<code>http://localhost:1313/</code>.查看创建我网页。</p>
+<p>此时，我们仍可以对网站进行修改，所作的修改将同步呈现在网页中。</p>
+<p>输入<code>hugo -D</code>生成静态网页，网站的支持文件将输出在./public/目录下。</p>
 <hr>
+<h2 id="同步到github远程库">同步到Github远程库</h2>
+<h3 id="1在github上建立远程库">1）在Github上建立远程库</h3>
+<p>在Github上新建仓库 username.github.io，username 即 Github 用户名。</p>
+<h3 id="2从本地上传到远程库">2）从本地上传到远程库</h3>
+<p>转到public目录，提交内容到缓冲区，连接远程库后推送至master分支。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd public
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;message&#34;
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/user-name/user-name.github.io.git
+</span></span><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3更新到github远程库">3）更新到Github远程库</h3>
+<p>转到public目录，提交内容到缓冲区后推送至master分支。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd .\Desktop\Solal2600.github.io-creator\
+</span></span><span class="line"><span class="cl">hugo -D
+</span></span><span class="line"><span class="cl">cd public
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;message&#34;
+</span></span><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
 
 </section>
 
