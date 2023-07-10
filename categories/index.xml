@@ -6,7 +6,15 @@
         <description>Recent content in Categories on Solal</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-hans</language>
-        <lastBuildDate>Fri, 30 Jun 2023 13:34:30 +0800</lastBuildDate><atom:link href="https://solal2600.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Jul 2023 16:59:44 +0800</lastBuildDate><atom:link href="https://solal2600.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>网站搭建</title>
+        <link>https://solal2600.github.io/categories/web/</link>
+        <pubDate>Mon, 10 Jul 2023 16:59:44 +0800</pubDate>
+        
+        <guid>https://solal2600.github.io/categories/web/</guid>
+        <description>&lt;img src="https://solal2600.github.io/category_web.jpg" alt="Featured image of post 网站搭建" /&gt;</description>
+        </item>
+        <item>
         <title>运动</title>
         <link>https://solal2600.github.io/categories/sport/</link>
         <pubDate>Fri, 30 Jun 2023 13:34:30 +0800</pubDate>
@@ -21,14 +29,6 @@
         
         <guid>https://solal2600.github.io/categories/write/</guid>
         <description>&lt;img src="https://solal2600.github.io/category_write.jpg" alt="Featured image of post 写作" /&gt;</description>
-        </item>
-        <item>
-        <title>网站搭建</title>
-        <link>https://solal2600.github.io/categories/web/</link>
-        <pubDate>Wed, 14 Jun 2023 16:54:43 +0800</pubDate>
-        
-        <guid>https://solal2600.github.io/categories/web/</guid>
-        <description>&lt;img src="https://solal2600.github.io/category_web.jpg" alt="Featured image of post 网站搭建" /&gt;</description>
         </item>
         <item>
         <title>读书</title>
