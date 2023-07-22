@@ -6,7 +6,15 @@
         <description>Recent content in Posts on Solal</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-hans</language>
-        <lastBuildDate>Mon, 17 Jul 2023 15:24:57 +0800</lastBuildDate><atom:link href="https://solal2600.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 16:25:51 +0800</lastBuildDate><atom:link href="https://solal2600.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git使用学习</title>
+        <link>https://solal2600.github.io/git/</link>
+        <pubDate>Sat, 22 Jul 2023 16:25:51 +0800</pubDate>
+        
+        <guid>https://solal2600.github.io/git/</guid>
+        <description>&lt;img src="https://solal2600.github.io/category_pro.jpg" alt="Featured image of post Git使用学习" /&gt;</description>
+        </item>
+        <item>
         <title>法国吉他购买</title>
         <link>https://solal2600.github.io/frguitar/</link>
         <pubDate>Mon, 17 Jul 2023 15:24:57 +0800</pubDate>
@@ -559,7 +567,7 @@
         <pubDate>Wed, 14 Jun 2023 16:54:43 +0800</pubDate>
         
         <guid>https://solal2600.github.io/webbuild1/</guid>
-        <description>&lt;img src="https://solal2600.github.io/category_web.jpg" alt="Featured image of post 使用hugo初步搭建网站" /&gt;&lt;h1 id=&#34;使用hugo搭建网站&#34;&gt;使用hugo搭建网站&lt;/h1&gt;
+        <description>&lt;img src="https://solal2600.github.io/category_pro.jpg" alt="Featured image of post 使用hugo初步搭建网站" /&gt;&lt;h1 id=&#34;使用hugo搭建网站&#34;&gt;使用hugo搭建网站&lt;/h1&gt;
 &lt;h2 id=&#34;前期准备&#34;&gt;前期准备&lt;/h2&gt;
 &lt;h3 id=&#34;1安装go语言&#34;&gt;1）安装go语言&lt;/h3&gt;
 &lt;p&gt;从All releases - The Go Programming Language下载.msi安装包，并安装到选定目录下。&lt;/p&gt;

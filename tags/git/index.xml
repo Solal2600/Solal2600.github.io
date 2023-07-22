@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>git on Solal</title>
+        <link>https://solal2600.github.io/tags/git/</link>
+        <description>Recent content in git on Solal</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-hans</language>
+        <lastBuildDate>Sat, 22 Jul 2023 16:25:51 +0800</lastBuildDate><atom:link href="https://solal2600.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git使用学习</title>
+        <link>https://solal2600.github.io/git/</link>
+        <pubDate>Sat, 22 Jul 2023 16:25:51 +0800</pubDate>
+        
+        <guid>https://solal2600.github.io/git/</guid>
+        <description>&lt;img src="https://solal2600.github.io/category_pro.jpg" alt="Featured image of post Git使用学习" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
