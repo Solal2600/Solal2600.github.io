@@ -15,12 +15,12 @@
         <description>&lt;img src="https://solal2600.github.io/category_france.jpg" alt="Featured image of post 法国留学" /&gt;</description>
         </item>
         <item>
-        <title>网站搭建</title>
-        <link>https://solal2600.github.io/categories/web/</link>
+        <title>专业学习</title>
+        <link>https://solal2600.github.io/categories/pro/</link>
         <pubDate>Sun, 16 Jul 2023 14:52:36 +0800</pubDate>
         
-        <guid>https://solal2600.github.io/categories/web/</guid>
-        <description>&lt;img src="https://solal2600.github.io/category_web.jpg" alt="Featured image of post 网站搭建" /&gt;</description>
+        <guid>https://solal2600.github.io/categories/pro/</guid>
+        <description>&lt;img src="https://solal2600.github.io/category_pro.jpg" alt="Featured image of post 专业学习" /&gt;</description>
         </item>
         <item>
         <title>写作</title>
@@ -39,20 +39,20 @@
         <description>&lt;img src="https://solal2600.github.io/category_sport.jpg" alt="Featured image of post 运动" /&gt;</description>
         </item>
         <item>
+        <title>web</title>
+        <link>https://solal2600.github.io/categories/web/</link>
+        <pubDate>Wed, 14 Jun 2023 16:54:43 +0800</pubDate>
+        
+        <guid>https://solal2600.github.io/categories/web/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>读书</title>
         <link>https://solal2600.github.io/categories/read/</link>
         <pubDate>Mon, 12 Jun 2023 15:03:44 +0800</pubDate>
         
         <guid>https://solal2600.github.io/categories/read/</guid>
         <description>&lt;img src="https://solal2600.github.io/category_read.jpeg" alt="Featured image of post 读书" /&gt;</description>
-        </item>
-        <item>
-        <title>无人机</title>
-        <link>https://solal2600.github.io/categories/drone/</link>
-        <pubDate>Wed, 14 Sep 2022 22:50:55 +0800</pubDate>
-        
-        <guid>https://solal2600.github.io/categories/drone/</guid>
-        <description>&lt;img src="https://solal2600.github.io/category_drone.jpg" alt="Featured image of post 无人机" /&gt;</description>
         </item>
         
     </channel>
