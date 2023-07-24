@@ -224,7 +224,15 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#git概述">Git概述</a></li>
-    <li><a href="#git工作流程">Git工作流程</a></li>
+    <li><a href="#git工作流程">Git工作流程</a>
+      <ol>
+        <li><a href="#git-init初始化">git init（初始化）</a></li>
+        <li><a href="#git-add添加">git add（添加）</a></li>
+        <li><a href="#git-commit提交">git commit（提交）</a></li>
+        <li><a href="#git-status查看修改状态">git status（查看修改状态）</a></li>
+        <li><a href="#git-log查看提交日志">git log（查看提交日志）</a></li>
+      </ol>
+    </li>
     <li><a href="#git基本配置">Git基本配置</a></li>
   </ol>
 </nav>
@@ -324,14 +332,53 @@
 Git GUI: Git图形界面工具<br>
 Git Bash: Git命令行工具</p>
 <h2 id="git工作流程">Git工作流程</h2>
+<h3 id="git-init初始化">git init（初始化）</h3>
+<p>初始化当前目录为一个本地git仓库<br>
+初始化完成后当前目录下会多一个.git隐藏文件夹</p>
+<h3 id="git-add添加">git add（添加）</h3>
+<p>将代码从工作区(workspace)提交到暂存区(index)
+<code>git add .</code>添加所有文件、文件夹和子文件夹，包括.gitignore和以点开头的任何其他内容</p>
+<h3 id="git-commit提交">git commit（提交）</h3>
+<p>将代码从暂存区提交到本地仓库，本地仓库中保存修改的各个历史版本
+git commit -m &ldquo;注释内容&rdquo;</p>
+<h3 id="git-status查看修改状态">git status（查看修改状态）</h3>
 <ol>
-<li>clone（克隆）：从远程仓库中克隆代码到本地仓库</li>
-<li>checkout（检出）：从本地仓库中检出一个仓库分支然后进行修订</li>
-<li>add（添加）：在提交前先将代码提交到暂存区</li>
-<li>commit（提交）：提交到本地仓库，本地仓库中保存修改的各个历史版本</li>
-<li>fetch（抓取）：从远程库抓取到本地仓库，不进行任何的合并动作，一般操作比较少</li>
-<li>pull（拉取）：从远程库拉取到本地库，自动进行合并（merge），然后放到工作区，相当于fetch+merge</li>
-<li>push（推送）：修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库</li>
+<li>untracked：未跟踪，新创建文件与git仓库无关联</li>
+<li>unstaged：未暂存，已有文件被修改</li>
+<li>staged：已暂存</li>
+</ol>
+<h3 id="git-log查看提交日志">git log（查看提交日志）</h3>
+<ol>
+<li>
+<p>&ndash;all 显示所有分支</p>
+</li>
+<li>
+<p>&ndash;pretty=oneline 将提交信息显示为一行</p>
+</li>
+<li>
+<p>&ndash;abbrev-commit 使得输出的commitId更简短</p>
+</li>
+<li>
+<p>&ndash;graph 以图的形式显示</p>
+</li>
+<li>
+<p>&ndash;decorate 新版默认有这个参数</p>
+</li>
+<li>
+<p>clone（克隆）：从远程仓库中克隆代码到本地仓库</p>
+</li>
+<li>
+<p>checkout（检出）：从本地仓库中检出一个仓库分支然后进行修订</p>
+</li>
+<li>
+<p>fetch（抓取）：从远程库抓取到本地仓库，不进行任何的合并动作，一般操作比较少</p>
+</li>
+<li>
+<p>pull（拉取）：从远程库拉取到本地库，自动进行合并（merge），然后放到工作区，相当于fetch+merge</p>
+</li>
+<li>
+<p>push（推送）：修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库</p>
+</li>
 </ol>
 <h2 id="git基本配置">Git基本配置</h2>
 <ol>
