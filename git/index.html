@@ -241,6 +241,12 @@
         <li><a href="#git-checkout检出">git checkout（检出）</a></li>
         <li><a href="#git-merge合并">git merge（合并）</a></li>
         <li><a href="#解决冲突">解决冲突</a></li>
+        <li><a href="#常见分支">常见分支</a></li>
+      </ol>
+    </li>
+    <li><a href="#远程仓库">远程仓库</a>
+      <ol>
+        <li><a href="#常见托管服务">常见托管服务</a></li>
       </ol>
     </li>
   </ol>
@@ -421,7 +427,7 @@ Git Bash: Git命令行工具</p>
 <code>git add .</code>添加所有文件、文件夹和子文件夹，包括.gitignore和以点开头的任何其他内容<br>
 创建.gitignore，在上面写的文件名会被<code>git add .</code>忽略</p>
 <h3 id="git-commit提交">git commit（提交）</h3>
-<p>将代码从暂存区提交到本地仓库，本地仓库中保存修改的各个历史版本<br>
+<p>将代码从暂存区(index)提交到本地仓库(repository)，本地仓库中保存修改的各个历史版本<br>
 <code>git commit -m &quot;注释内容&quot;</code></p>
 <h3 id="git-status查看修改状态">git status（查看修改状态）</h3>
 <ol>
@@ -457,6 +463,30 @@ git checkout -b (branchname) 创建分支并切换</p>
 <h3 id="git-merge合并">git merge（合并）</h3>
 <p><code>git merge dev01</code> 将dev01分支合并到当前分支</p>
 <h3 id="解决冲突">解决冲突</h3>
+<ol>
+<li>出现CONFILCT提示，处理提示中文件冲突的地方</li>
+<li>git add</li>
+<li>git commit</li>
+</ol>
+<h3 id="常见分支">常见分支</h3>
+<ol>
+<li>master（生产分支）：主分支，产品交付的版本</li>
+<li>develop（开发分支）：用于同产品不同任务的合并</li>
+<li>hotfix：用于bug修复，修复完合并到master和develop分支</li>
+</ol>
+<h2 id="远程仓库">远程仓库</h2>
+<h3 id="常见托管服务">常见托管服务</h3>
+<ol>
+<li>GitHub(<a class="link" href="https://github.com"  target="_blank" rel="noopener"
+    >https://github.com</a>)  <br>
+是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管</li>
+<li>Gitee码云(<a class="link" href="https://gitee.com/"  target="_blank" rel="noopener"
+    >https://gitee.com/</a>)<br>
+是国内的一个代码托管平台，由于服务器在国内，所以相比于 GitHub，码云速度会更快</li>
+<li>GitLab(<a class="link" href="https://about.gitlab.com/"  target="_blank" rel="noopener"
+    >https://about.gitlab.com/</a>)
+是一个用于仓库管理系统的开源项目，使用Git作 为代码管理工具，并在此基础上搭建起来的web服务,一般用于在企业、学校等内部网络搭建git私服。</li>
+</ol>
 
 </section>
 

@@ -103,7 +103,7 @@ Git Bash: Git命令行工具&lt;/p&gt;
 &lt;code&gt;git add .&lt;/code&gt;添加所有文件、文件夹和子文件夹，包括.gitignore和以点开头的任何其他内容&lt;br&gt;
 创建.gitignore，在上面写的文件名会被&lt;code&gt;git add .&lt;/code&gt;忽略&lt;/p&gt;
 &lt;h3 id=&#34;git-commit提交&#34;&gt;git commit（提交）&lt;/h3&gt;
-&lt;p&gt;将代码从暂存区提交到本地仓库，本地仓库中保存修改的各个历史版本&lt;br&gt;
+&lt;p&gt;将代码从暂存区(index)提交到本地仓库(repository)，本地仓库中保存修改的各个历史版本&lt;br&gt;
 &lt;code&gt;git commit -m &amp;quot;注释内容&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;git-status查看修改状态&#34;&gt;git status（查看修改状态）&lt;/h3&gt;
 &lt;ol&gt;
@@ -139,6 +139,30 @@ git checkout -b (branchname) 创建分支并切换&lt;/p&gt;
 &lt;h3 id=&#34;git-merge合并&#34;&gt;git merge（合并）&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;git merge dev01&lt;/code&gt; 将dev01分支合并到当前分支&lt;/p&gt;
 &lt;h3 id=&#34;解决冲突&#34;&gt;解决冲突&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;出现CONFILCT提示，处理提示中文件冲突的地方&lt;/li&gt;
+&lt;li&gt;git add&lt;/li&gt;
+&lt;li&gt;git commit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;常见分支&#34;&gt;常见分支&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;master（生产分支）：主分支，产品交付的版本&lt;/li&gt;
+&lt;li&gt;develop（开发分支）：用于同产品不同任务的合并&lt;/li&gt;
+&lt;li&gt;hotfix：用于bug修复，修复完合并到master和develop分支&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;远程仓库&#34;&gt;远程仓库&lt;/h2&gt;
+&lt;h3 id=&#34;常见托管服务&#34;&gt;常见托管服务&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;GitHub(&lt;a class=&#34;link&#34; href=&#34;https://github.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com&lt;/a&gt;)  &lt;br&gt;
+是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管&lt;/li&gt;
+&lt;li&gt;Gitee码云(&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitee.com/&lt;/a&gt;)&lt;br&gt;
+是国内的一个代码托管平台，由于服务器在国内，所以相比于 GitHub，码云速度会更快&lt;/li&gt;
+&lt;li&gt;GitLab(&lt;a class=&#34;link&#34; href=&#34;https://about.gitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://about.gitlab.com/&lt;/a&gt;)
+是一个用于仓库管理系统的开源项目，使用Git作 为代码管理工具，并在此基础上搭建起来的web服务,一般用于在企业、学校等内部网络搭建git私服。&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
