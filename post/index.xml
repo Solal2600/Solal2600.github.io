@@ -22,55 +22,6 @@
     &gt;https://git-scm.com/download&lt;/a&gt;
 Git GUI: Git图形界面工具&lt;br&gt;
 Git Bash: Git命令行工具&lt;/p&gt;
-&lt;h2 id=&#34;git工作流程&#34;&gt;Git工作流程&lt;/h2&gt;
-&lt;h3 id=&#34;git-init初始化&#34;&gt;git init（初始化）&lt;/h3&gt;
-&lt;p&gt;初始化当前目录为一个本地git仓库&lt;br&gt;
-初始化完成后当前目录下会多一个.git隐藏文件夹&lt;/p&gt;
-&lt;h3 id=&#34;git-add添加&#34;&gt;git add（添加）&lt;/h3&gt;
-&lt;p&gt;将代码从工作区(workspace)提交到暂存区(index)
-&lt;code&gt;git add .&lt;/code&gt;添加所有文件、文件夹和子文件夹，包括.gitignore和以点开头的任何其他内容&lt;/p&gt;
-&lt;h3 id=&#34;git-commit提交&#34;&gt;git commit（提交）&lt;/h3&gt;
-&lt;p&gt;将代码从暂存区提交到本地仓库，本地仓库中保存修改的各个历史版本
-git commit -m &amp;ldquo;注释内容&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;git-status查看修改状态&#34;&gt;git status（查看修改状态）&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;untracked：未跟踪，新创建文件与git仓库无关联&lt;/li&gt;
-&lt;li&gt;unstaged：未暂存，已有文件被修改&lt;/li&gt;
-&lt;li&gt;staged：已暂存&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;git-log查看提交日志&#34;&gt;git log（查看提交日志）&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;ndash;all 显示所有分支&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;ndash;pretty=oneline 将提交信息显示为一行&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;ndash;abbrev-commit 使得输出的commitId更简短&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;ndash;graph 以图的形式显示&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;ndash;decorate 新版默认有这个参数&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;clone（克隆）：从远程仓库中克隆代码到本地仓库&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;checkout（检出）：从本地仓库中检出一个仓库分支然后进行修订&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;fetch（抓取）：从远程库抓取到本地仓库，不进行任何的合并动作，一般操作比较少&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;pull（拉取）：从远程库拉取到本地库，自动进行合并（merge），然后放到工作区，相当于fetch+merge&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;push（推送）：修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;h2 id=&#34;git基本配置&#34;&gt;Git基本配置&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;右键打开Git Bash&lt;/li&gt;
@@ -143,7 +94,52 @@ git commit -m &amp;ldquo;注释内容&amp;rdquo;&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    export LC_ALL=&amp;#34;zh_CN.UTF-8&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;git基本工作流程&#34;&gt;Git基本工作流程&lt;/h2&gt;
+&lt;h3 id=&#34;git-init初始化&#34;&gt;git init（初始化）&lt;/h3&gt;
+&lt;p&gt;初始化当前目录为一个本地git仓库&lt;br&gt;
+初始化完成后当前目录下会多一个.git隐藏文件夹&lt;/p&gt;
+&lt;h3 id=&#34;git-add添加&#34;&gt;git add（添加）&lt;/h3&gt;
+&lt;p&gt;将代码从工作区(workspace)提交到暂存区(index)
+&lt;code&gt;git add .&lt;/code&gt;添加所有文件、文件夹和子文件夹，包括.gitignore和以点开头的任何其他内容&lt;br&gt;
+创建.gitignore，在上面写的文件名会被&lt;code&gt;git add .&lt;/code&gt;忽略&lt;/p&gt;
+&lt;h3 id=&#34;git-commit提交&#34;&gt;git commit（提交）&lt;/h3&gt;
+&lt;p&gt;将代码从暂存区提交到本地仓库，本地仓库中保存修改的各个历史版本&lt;br&gt;
+&lt;code&gt;git commit -m &amp;quot;注释内容&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git-status查看修改状态&#34;&gt;git status（查看修改状态）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;untracked：未跟踪，新创建文件与git仓库无关联&lt;/li&gt;
+&lt;li&gt;unstaged：未暂存，已有文件被修改&lt;/li&gt;
+&lt;li&gt;staged：已暂存&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;git-log查看提交日志&#34;&gt;git log（查看提交日志）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;ndash;all 显示所有分支&lt;/li&gt;
+&lt;li&gt;&amp;ndash;pretty=oneline 将提交信息显示为一行&lt;/li&gt;
+&lt;li&gt;&amp;ndash;abbrev-commit 使得输出的commitId更简短&lt;/li&gt;
+&lt;li&gt;&amp;ndash;graph 以图的形式显示&lt;/li&gt;
+&lt;li&gt;&amp;ndash;decorate 新版默认有这个参数
+&lt;code&gt;git reflog&lt;/code&gt; 这个指令可以看到已经删除的提交日志&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;git-reset版本回退&#34;&gt;git reset（版本回退）&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git reset --hard commitID&lt;/code&gt; 其中commitID可以使用git log指令查看&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;clone（克隆）：从远程仓库中克隆代码到本地仓库&lt;/li&gt;
+&lt;li&gt;fetch（抓取）：从远程库抓取到本地仓库，不进行任何的合并动作，一般操作比较少&lt;/li&gt;
+&lt;li&gt;pull（拉取）：从远程库拉取到本地库，自动进行合并（merge），然后放到工作区，相当于fetch+merge&lt;/li&gt;
+&lt;li&gt;push（推送）：修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;分支&#34;&gt;分支&lt;/h2&gt;
+&lt;h3 id=&#34;git-branch查看分支&#34;&gt;git branch（查看分支）&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git branch (branchname)&lt;/code&gt; 创建分支&lt;br&gt;
+&lt;code&gt;git branch -d (branchname)&lt;/code&gt; 删除分支时，需要做各种检查&lt;br&gt;
+&lt;code&gt;git branch -D (branchname)&lt;/code&gt; 不做任何检查，强制删除&lt;/p&gt;
+&lt;h3 id=&#34;git-checkout检出&#34;&gt;git checkout（检出）&lt;/h3&gt;
+&lt;p&gt;从本地仓库中检出一个仓库分支然后进行修订（切换分支）
+git checkout -b (branchname) 创建分支并切换&lt;/p&gt;
+&lt;h3 id=&#34;git-merge合并&#34;&gt;git merge（合并）&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git merge dev01&lt;/code&gt; 将dev01分支合并到当前分支&lt;/p&gt;
+&lt;h3 id=&#34;解决冲突&#34;&gt;解决冲突&lt;/h3&gt;
+</description>
         </item>
         <item>
         <title>法国吉他购买</title>
