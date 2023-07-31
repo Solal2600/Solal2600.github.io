@@ -163,6 +163,12 @@ git checkout -b (branchname) 创建分支并切换&lt;/p&gt;
     &gt;https://about.gitlab.com/&lt;/a&gt;)
 是一个用于仓库管理系统的开源项目，使用Git作 为代码管理工具，并在此基础上搭建起来的web服务,一般用于在企业、学校等内部网络搭建git私服。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;配置ssh公钥&#34;&gt;配置SSH公钥&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;ssh-keygen -t rsa #终端输入，然后不断回车&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;cat ~/.ssh/id_rsa.pub #复制并黏贴在github设置里&lt;/code&gt;
+&lt;code&gt;ssh -T git@github.com #验证是否配置成功&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git-remote&#34;&gt;git remote&lt;/h3&gt;
+&lt;h3 id=&#34;git-push&#34;&gt;git push&lt;/h3&gt;
 </description>
         </item>
         

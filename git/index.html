@@ -247,6 +247,9 @@
     <li><a href="#远程仓库">远程仓库</a>
       <ol>
         <li><a href="#常见托管服务">常见托管服务</a></li>
+        <li><a href="#配置ssh公钥">配置SSH公钥</a></li>
+        <li><a href="#git-remote">git remote</a></li>
+        <li><a href="#git-push">git push</a></li>
       </ol>
     </li>
   </ol>
@@ -487,6 +490,12 @@ git checkout -b (branchname) 创建分支并切换</p>
     >https://about.gitlab.com/</a>)
 是一个用于仓库管理系统的开源项目，使用Git作 为代码管理工具，并在此基础上搭建起来的web服务,一般用于在企业、学校等内部网络搭建git私服。</li>
 </ol>
+<h3 id="配置ssh公钥">配置SSH公钥</h3>
+<p><code>ssh-keygen -t rsa #终端输入，然后不断回车</code><br>
+<code>cat ~/.ssh/id_rsa.pub #复制并黏贴在github设置里</code>
+<code>ssh -T git@github.com #验证是否配置成功</code></p>
+<h3 id="git-remote">git remote</h3>
+<h3 id="git-push">git push</h3>
 
 </section>
 
